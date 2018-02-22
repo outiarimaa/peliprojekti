@@ -6,10 +6,7 @@ public class Kantakäsittelijä {
     private Connection con;
 
     public Kantakäsittelijä() {
-        if (con == null) {
-            Kantakäsittelijä k = new Kantakäsittelijä();
-            k.otaYhteys();
-        }
+        otaYhteys();
     }
 
     private static void lataaAjuri() throws ClassNotFoundException {

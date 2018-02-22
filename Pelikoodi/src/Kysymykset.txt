@@ -1,0 +1,13 @@
+﻿Millä metodilla Array järjestetään?;Array.sort();Arrays.sort();Collection.sort();System.sort();1
+Tiedoston sulkeminen kannattaa tehdä try-lohkon sisällä?;Kyllä;Ei;1
+Missä Map-rajapinnassa alkiot ovat syöttöjärjestyksessä?;HashMap;WeakHashMap;IdentityHashMap;LinkedHashmap;3
+Mikä ero on sanoilla Collection ja Collections?;Collection on rajapinta ja Collections on luokka;Collection on luokka ja Collections on rajapinta;Collection on staattinen lohko;0
+Mitä tekee Iterator rajapinnan hasNext()-metodi?;Palauttaa seuraavan alkion;Palauttaa totuusarvon;Siirtyy seuraavaan alkioon;1
+LinkedListin avulla voi hakea nopeasti tallennetuja arvoja?;Kyllä;Ei;1
+Mitä tarkoittaa luokan määrittelyssä teksti Abstract?;Luokalla ei voi olla ainoatakaan yläluokkaa;Luokalla ei voi olla ainoatakaan alaluokkaa;Luokalla ei ole suoraa ilmentymää reaalimaailmassa;Luokan aliluokista ei voi luoda olioita;2
+Mitä seuraava koodi tulostaa: System.out.println(2+2+"22"+2)?;22222;28;424;4222;3
+Miten Javassa ilmoitetaan, että luvun täytyy olla suurempi kuin 5 ja pienempi tai yhtä suuri kuin 9?;5 <= a < 9;5 < a <= 9; a > 5 || a <= 9;a > 5 && a <= 9;3
+Millä sivulla Java-ohjelmointi kirjassa puhutaan 2-ulotteisista taulukoista? (Kysymyksen varsinainen tarkoitus ei ole vaikeuttaa täysien pisteiden saamista testistä);s.145;s.225;s.287;s.311;1
+Kuinka monta välilyöntiä Javassa käytetään yhden sisennyksen tekemiseen?;1;8;0;4;3
+Millä merkillä luokkakaaviossa määritellään kapseloitu muuttuja?;()muuttujanNimi:muuttujanTyyppi;+muuttujanNimi:muuttujanTyyppi;[]muuttujanNimi:muuttujanTyyppi;-muuttujanNimi:muuttujanTyyppi;3
+Mitä oikeasti tarkoittaa ABC?;Always Be Closing;Always Be Coding;Actually Be Closing;Arithmetic Binary Code;1

@@ -8,7 +8,7 @@ import java.util.List;
 
 public class LueTiedosto {
     public static void main(String[] args) {
-        String nimi = "LueTiedosto.java";
+        String nimi = "VLueTiedosto.java";
         String polku = "src/";
         try {
             LueTiedosto(nimi,polku);

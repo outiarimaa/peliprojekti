@@ -17,7 +17,7 @@ public class Kantakäsittelijä {
         System.out.println("Ajuri ladattu");
     }
 
-    private void otaYhteys() {
+    public void otaYhteys() {
         try {
             lataaAjuri();
             this.con = DriverManager.getConnection("jdbc:mysql://localhost:3306/tietopeli?useSSL=false",

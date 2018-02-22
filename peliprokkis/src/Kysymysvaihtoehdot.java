@@ -1,6 +1,8 @@
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 public class Kysymysvaihtoehdot {
     private int id;
-    private int kysymysid;
     private String teksti;
     private String oikeavastaus;
 
@@ -9,9 +11,15 @@ public class Kysymysvaihtoehdot {
 
     public Kysymysvaihtoehdot(int id, int kysymysid, String teksti, String oikeavastaus) {
         this.id = id;
-        this.kysymysid = kysymysid;
         this.teksti = teksti;
         this.oikeavastaus = oikeavastaus;
+    }
+
+    public Kysymysvaihtoehdot(ResultSet rs) throws SQLException {
+        Kysymysvaihtoehdot o = this;
+        o.setId(rs.getInt("id"));
+        o.setTeksti(rs.getString("teksti"));
+        o.setOikeavastaus(rs.getString("oikeavastaus"));
     }
 
     public int getId() {
@@ -20,14 +28,6 @@ public class Kysymysvaihtoehdot {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public int getKysymysid() {
-        return kysymysid;
-    }
-
-    public void setKysymysid(int kysymysid) {
-        this.kysymysid = kysymysid;
     }
 
     public String getTeksti() {
@@ -46,13 +46,13 @@ public class Kysymysvaihtoehdot {
         this.oikeavastaus = oikeavastaus;
     }
 
-    @java.lang.Override
-    public java.lang.String toString() {
+    @Override
+    public String toString() {
         return "Kysymysvaihtoehdot{" +
                 "id=" + id +
-                ", kysymysid=" + kysymysid +
                 ", teksti='" + teksti + '\'' +
                 ", oikeavastaus='" + oikeavastaus + '\'' +
                 '}';
     }
 }
+

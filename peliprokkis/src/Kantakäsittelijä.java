@@ -6,10 +6,7 @@ public class Kantakäsittelijä {
     private Connection con;
 
     public Kantakäsittelijä() {
-        if (con == null) {
-            Kantakäsittelijä k = new Kantakäsittelijä();
-            k.otaYhteys();
-        }
+        otaYhteys();
     }
 
     private static void lataaAjuri() throws ClassNotFoundException {
@@ -17,7 +14,7 @@ public class Kantakäsittelijä {
         System.out.println("Ajuri ladattu");
     }
 
-    public void otaYhteys() {
+    private void otaYhteys() {
         try {
             lataaAjuri();
             this.con = DriverManager.getConnection("jdbc:mysql://localhost:3306/tietopeli?useSSL=false",

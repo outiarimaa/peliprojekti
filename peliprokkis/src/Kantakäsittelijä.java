@@ -11,7 +11,7 @@ public class Kantakäsittelijä {
 
     private static void lataaAjuri() throws ClassNotFoundException {
         Class.forName("com.mysql.jdbc.Driver");
-        System.out.println("Ajuri ladattu");
+//        System.out.println("Ajuri ladattu");
     }
 
     private void otaYhteys() {
